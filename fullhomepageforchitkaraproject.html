@@ -1,0 +1,1919 @@
+<!DOCTYPE html>
+<head><title>
+   HOME
+   </title>
+   <link rel="stylesheet"
+   href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"
+   >
+   </head>
+   <style>
+       body{
+           background-color:#f0f2f5;
+       }
+       #container-logo{
+           background-color:rgb(163, 37, 212);
+           top: 0rem;
+           position: absolute;
+           height:3.5rem;
+           width:100%;
+           left:0rem;
+           position: fixed;
+           z-index: 1;
+       }
+      
+       
+        #logo_first{
+           display: inline-block;
+              position:absolute;
+             color: rgb(223, 227, 231);
+            left: 3.4rem;
+            top:3px;
+        }
+        #logo_second{
+           display: inline-block;
+              position:absolute;
+              top:1.5rem;
+              left:3.4rem;
+              color: rgb(226, 226, 238);
+        }
+        #facebicon{
+            margin-top: 4px;
+           
+        }
+        #fav{
+            display: inline-block;
+            position: absolute;
+            left:17rem;
+            top:1rem;
+           color: rgb(23, 23, 24);
+           }
+           #search{
+               display: inline-block;
+            position: absolute;
+            left:18rem;
+            
+            top:1rem;
+            color: rgb(229, 229, 241);
+            
+           }
+           #searchbutton{
+               line-height: 1.2rem;
+           }
+           input {
+               line-height:17x;
+           }
+          divv{
+           border:2px solid rgb(243, 240, 240);
+       height:2rem;   
+       }
+       #microphone{
+           margin-left:-11px;
+           color: rgb(8, 16, 22);
+       }
+       #bell{
+           display: inline-block;
+           height:19rem;
+            position: absolute;
+            left:70rem;
+            font-size: xx-large;
+            top:10px;
+            color:rgb(255, 247, 247);
+       }
+       #photo{
+           display: inline-block;
+            position: absolute;
+            left:74rem;
+            top:1px;
+           
+       }
+       .phot{
+           border-radius:50%;
+       }
+       #bell_notification{
+           height:2rem;
+           width:2rem;
+       }
+       #left_part{
+           margin-top:4rem;
+           position:fixed;
+         /*  border:2px solid blueviolet;*/
+           height:30rem;
+           overflow-y: hidden;
+           overflow-x: hidden;
+           display: inline-block;
+       
+           width:16rem;
+           background-color: azure;
+       }
+       #left_part:hover{
+           overflow-y: scroll;
+
+       }
+       .text_photo{
+           position: relative;
+           top:-1.3rem;
+           left:2rem;
+       }.text_photo_first{
+           position: relative;
+           top:-2rem;
+           left:5rem;
+       }
+       .iimage{
+           margin-top: 6px;
+           margin-left: 9px;
+       }
+      #right_part{
+          display: inline-block;
+      }
+       #right_part_advertisement{
+           width:17rem;
+           height:18rem;
+           border:2px solid gray;
+           margin-left: 60rem;
+           margin-top: 5rem;
+           position:fixed;
+           background-color: azure;
+       }
+       #advertisement{
+           margin-top: 0.5rem;
+           font-size: x-large;
+           margin-left: 3rem;
+       }
+       #exclusive{
+           position: absolute;
+           top:5rem;
+           left:5rem;
+           font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+       }
+       #apple{
+        position: absolute;
+           top:13rem;
+           left:5rem;
+           font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   
+
+       }
+       #right_part_contacts{
+           width:17rem;
+           height:18rem;
+           border:2px solid gray;
+           margin-left: 60rem;
+           position:fixed;
+           margin-top: 22.2rem;
+           overflow-x: hidden;
+           overflow-y: scroll;
+           background-color: azure;
+       }
+       #contact_heading{
+           margin-left: 7rem;
+           margin-top: 0.5rem;
+           font-size: x-large;
+       }
+       .contacts_section{
+           margin-top: 0.5rem;
+           margin-left: 0.5rem;
+       }
+       #imgg{
+           border-radius:50%;
+       }
+      .Omi{
+          position: relative;
+          top:-2.4rem;
+          left:1rem;
+          margin-left:3rem;
+
+}
+#My_post{
+position: absolute;
+top:1rem;
+left:45rem;
+}
+#My_Profile{
+    position: absolute;
+top:1rem;
+left:55rem;
+}
+#About{
+    position: absolute;
+top:1rem;
+left:60rem;
+}
+#buttonsign_in{
+    position: absolute;
+top:1rem;
+left:65rem;
+
+
+
+}
+/* ****************
+******************
+CENTER PART
+******************
+*******************
+*/
+.parent{
+            background-color: white;
+            width: 30rem;
+            height: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-radius: 3px;
+            margin-left: 5rem;
+            margin-right: auto;
+            padding: 10px;
+            border:2px solid grey;
+      
+        }
+        .profile{
+            display: flex;
+        }
+        .profile img{
+            height: 60px;
+            width: 60px;
+            border-radius: 100px;
+            background-size: contain;
+        }
+        .image img{
+            height: 40%;
+            width: 101%;
+            border-radius: 3px;
+        }
+        .one{
+            margin-top: -20px;
+            margin-left: 7px;
+        }
+        .one p{
+            margin-top: -22px;
+            color: gray;
+            font-family: cursive;
+        }
+     
+        .parent:hover{
+        
+          /*transform: scale(1.1);
+            */box-shadow: 0px 0px 6px 6px lightgray;
+        }
+        .icons{
+            display: flex;
+            margin-left: 6px; 
+        }
+        .icons img{
+            height: 30px;
+            width: 40px;
+        }
+        .icons img{
+            height: 39px;
+            width: 39px;
+            border-radius: 100px;
+        }
+    
+        #transition{
+            height: 0;
+            width: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            overflow:hidden;
+        }
+        #transition:target{
+            height: 330px;
+            width: 480px;
+    background-color: #ffffff;
+    top: 0px;
+    left: -228px;
+            position:relative;
+            border-radius: 10px;
+            padding: 6px;
+           /* border: 2px solid black;
+            */
+        }
+        #transition2{
+            height: 0;
+            width: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            overflow:hidden;
+        }
+        #transition2:target{
+            height: 330px;
+            width: 480px;
+    background-color: #ffffff;
+    top: 0px;
+    left: -228px;
+            position:relative;
+            border-radius: 10px;
+            padding: 6px;
+            
+        }
+        #transition3{
+            height: 0;
+            width: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            overflow:hidden;
+        }
+        #transition3:target{
+            height: 330px;
+            width: 480px;
+    background-color: #ffffff;
+    top: 0px;
+    left: -228px;
+            position:relative;
+            border-radius: 10px;
+            padding: 6px;
+        }
+        #transition4{
+            height: 0;
+            width: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            overflow:hidden;
+        }
+        #transition4:target{
+            height: 330px;
+            width: 480px;
+    background-color: #ffffff;
+    top: 0px;
+    left: -228px;
+            position:relative;
+            border-radius: 10px;
+            padding: 6px;
+            
+        }
+        #transition5{
+            height: 0;
+            width: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            overflow:hidden;
+        }
+        #transition5:target{
+            height: 330px;
+            width: 480px;
+    background-color: #ffffff;
+    top: 0px;
+    left: -228px;
+            position:relative;
+            border-radius: 10px;
+            padding: 6px;
+            
+        }
+        #transition6{
+            height: 0;
+            width: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            overflow:hidden;
+        }
+        #transition6:target{
+            height: 330px;
+            width: 480px;
+    background-color: #ffffff;
+    top: 0px;
+    left: -228px;
+            position:relative;
+            border-radius: 10px;
+            padding: 6px;
+            
+        }
+        #transition7{
+            height: 0;
+            width: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            overflow:hidden;
+        }
+        #transition7:target{
+            height: 330px;
+            width: 480px;
+    background-color: #ffffff;
+    top: 0px;
+    left: -228px;
+            position:relative;
+            border-radius: 10px;
+            padding: 6px;
+            
+        }
+        .back{
+            height: 20px;
+            width: 7px;
+        }
+        .wordcomment{
+            margin-left: 15px;
+            font-size:25px;
+            font-weight: 550;
+            vertical-align:top;
+        }
+        .numberofthese{
+            margin-left: 5px;
+            margin-top: 10px;
+        }
+        #numberoflikes{
+            margin-left: 5px;
+            margin-top: 10px;
+        }
+        #numberoflikes2{
+            margin-left: 5px;
+            margin-top: 10px;
+        }
+        textarea{
+            border: white;
+            overflow: hidden;
+        }
+        button{
+            background-color:#F0F0F0 ;
+            color: blue;
+            border: white;
+            padding: 5px;
+        }
+        .typetext{
+            font-family: sans-serif;
+        }
+        .typetext img{
+            height: 25px;
+            width: 30px;
+            margin-top: 2px;
+        }
+        .variousemoji{
+            display: flex;
+            justify-content: space-around;
+            visibility: hidden;
+            margin-bottom: 0.5rem;
+        }
+        /*.variousemoji:target{
+            visibility:visible;
+        }*/
+        .variousemoji img{
+            height: 35px;
+            width: 35px;
+        }
+        #form{
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 6px;
+        }
+
+        /*commentbox center part start*/
+        #inside{
+            display: flex;
+        }
+        #image{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+        }
+        .base{
+            color: gray;
+            font-family: cursive;
+            margin-top: -1px;
+            font-weight: 400;
+            font-size: 15px;
+          
+        }
+        .side{
+            margin-left: 12px;
+        }
+        .base span{
+            margin-left: 10px;
+        }
+        #name{
+            font-size: 20px;
+            font-weight: 800;
+        }
+        .comment{
+            margin-left: 5px;
+        }
+        .sideimage img{
+            height: 25px;
+            width: 25px;
+            border-radius: 50%;
+            background-size: contain;
+            margin-left: 4rem;
+            margin-top: 0.6rem;
+        }
+        #main{
+            display: flex;
+          flex-wrap: wrap;
+        }
+        #commentbox{
+            overflow: auto;
+            background-color: white;
+            height: 203px;
+        }
+        #commentbox::-webkit-scrollbar{
+            display: none;
+        }
+.totally_ander{
+  
+    position: absolute;
+    top:22rem;
+    left:18rem;
+    
+}
+/*header style-->*/
+#yourstory{
+    position: relative;
+    top:-0.5rem;
+    width:8.2rem;
+    height:15rem;
+    border: 1px solid grey;
+    border-radius: 4%;
+    margin-top: -8rem;
+    display: inline-block;
+    
+}
+#text_1_text{
+    margin-top: 0.8rem;
+    margin-left: 1rem;
+}
+#addonn{
+    position:absolute;
+    margin-top: 10.6rem;
+    color: blue;
+    margin-left: -5.7rem;
+    font-size: xx-large;
+    border:5px solid whitesmoke;
+    border-radius: 50%;
+    background-color: aliceblue;
+}
+#othersstorystart{
+    display: inline-block;
+    margin-left: 1rem;
+    border:1px solid grey;
+    border-radius: 4%;
+    height:15rem;
+}
+#text_1_text_otheruser{
+
+color: rgb(2, 8, 14);
+margin-left: 1.6rem;
+}
+#usersvideos{
+    position: absolute;
+    left: 18rem;
+    top:4rem;
+}
+#chatbot{
+    top: 33.7rem;
+    left: 68rem;
+   background-color: black;
+   color: aliceblue;
+    border: 2px solid grey;
+    height: 1.8rem;
+    width: 8rem;
+    position: fixed;
+    z-index:8;
+   
+  transition: all 1s;
+}
+#chatbot:hover{
+
+  background-color: aliceblue;
+  color: black;
+   
+}
+#chatbots{
+    top: 33.7em;
+    left: 68rem;
+    z-index: 9;
+    width:40px;
+   
+    position: fixed;
+    transition: all 2s;
+}
+
+#text{
+    margin-top:0.5rem;
+    margin-left:2.8rem;
+}
+       </style>
+       <body>
+        <div id="container-logo">
+<div id="facebicon">   
+             <img src="https://www.chitkara.edu.in/wp-content/themes/chitkara/images/cu-icon.png"
+           alt="logo" height="40px" width="40px"></div>
+
+              <div id="logo_first"> CHITKARA</div>
+              <div id="logo_second"> COMMUNITY</div>
+            
+              <div id="search"><divv><i class="fas fa-search"></i></divv><input id="searchbutton" type="text" placeholder="Search in community" size="34"><i id="microphone" class="fas fa-microphone"></i></div> 
+              <div id="bell"><i id="bell_notification" class="fas fa-bell"></i></div> 
+              <div id="photo"><img class="phot" src="https://www.imagediamond.com/blog/wp-content/uploads/2020/06/cartoon-boy-images-1.jpg"
+                 height="50px" width="50px"></div>  
+                <a href="aslimypostforchitkaraproject.html"><div id="My_post"><button style=" margin-left:2.4rem; width:6rem; background-color: aliceblue; color: rgb(163, 37, 212);">My Posts</button></div></a> 
+    <a href="profilepagechitkaraproject.html"><div id="My_Profile"><button style=" background-color: aliceblue; color: rgb(163, 37, 212);">Profile</button></div></a> 
+    <a href="realaboutpageforchitkaraproject.html"> <div id="About"><button style=" background-color: aliceblue; color: rgb(163, 37, 212);">About</button></div></a>
+    <a href="chitkaraprojectSignup_page.html"> <div id="buttonsign_in"><button style=" background-color: aliceblue; color: rgb(163, 37, 212);">Sign In</button></div></a>
+                </div>
+
+                <!--chat part-->
+                <a href="chatbots.html">
+                <div id="chatbots">
+                    <img src="https://www.chitkara.edu.in/wp-content/themes/chitkara/images/cu-icon.png"
+                    alt="logo" height="32px" width="32px">
+                </div>
+<div id="chatbot">
+    <div id="text"><b>Chat Box</b></div>
+</div>
+</a>
+
+
+                <!--chat part end-->
+<div id="left_part">
+<div class="photowithtext">
+    <div class="iimage">
+    <img class="phot" src="https://www.imagediamond.com/blog/wp-content/uploads/2020/06/cartoon-boy-images-1.jpg"
+    height="50px" width="50px"></div>
+    <span class="text_photo_first"> RAHUL SHARMA </span>
+</div>
+
+
+    <div class="photo with_text">
+        <div class="iimage">
+                    <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yZ/r/i7hepQ2OeZg.png"
+                    height="40px" width="40px">
+       <span class="text_photo"> FRIENDS </span>
+    </div>
+
+    </div>
+    <div class="photo with_text">
+        <div class="iimage">
+        <img src="https://static.xx.fbcdn.net/rsrc.php/v3/y7/r/AYj2837MmgX.png"
+        height="40px" width="40px">
+        <span class="text_photo"> Pages </span></div>
+    </div>
+    <div class="photo with_text">
+        <div class="iimage">
+        <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/mk4dH3FK0jT.png"
+        height="40px" width="40px">
+        <span class="text_photo">Groups</span></div>
+    </div>
+    <div class="photo with_text">
+        <div class="iimage">
+        <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yG/r/A1HlI2LVo58.png"
+        height="40px" width="40px">
+        <span class="text_photo"> Memories </span></div>
+    </div>
+
+    <!--kkkkkk-->
+    <div class="photo with_text">
+        <div class="iimage">
+        <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yx/r/-XF4FQcre_i.png"
+        height="40px" width="40px">
+        <span class="text_photo"> Watch </span></div>
+    </div>
+    <div class="photo with_text">
+        <div class="iimage">
+        <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yr/r/2uPlV4oORjU.png"
+        height="40px" width="40px">
+        <span class="text_photo"> Events </span></div>
+    </div>
+    <div class="photo with_text">
+        <div class="iimage">
+        <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/9-o1e6LN_TX.png"
+        height="40px" width="40px">
+        <span class="text_photo"> Jobs </span></div>
+    </div>
+    <div class="photo with_text">
+        <div class="iimage">
+        <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yJ/r/EWFR9xI64Mg.png"
+        height="40px" width="40px">
+        <span class="text_photo">Most recent </span></div>
+    </div>
+    <div class="photo with_text">
+        <div class="iimage">
+        <img src="https://static.xx.fbcdn.net/rsrc.php/v3/y1/r/l6e-P1BHJLy.png"
+        height="40px" width="40px">
+        <span class="text_photo"> Ads </span></div>
+    </div>
+    <div class="photo with_text">
+        <div class="iimage">
+        <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yG/r/A1HlI2LVo58.png"
+        height="40px" width="40px">
+        <span class="text_photo"> Live videos </span></div>
+    </div>
+    
+</div>
+<!--header-->
+<div id="usersvideos">
+    <div id="yourstory">
+<img style="border-radius: 4%;" src="https://www.imagediamond.com/blog/wp-content/uploads/2020/06/cartoon-boy-images-1.jpg"
+            height="198rem" width="130rem">
+            <i id="addonn" class="fas fa-plus-circle"></i>
+           <div id="text_1_text"><b> Create Story</b> </div>
+    </div>
+
+    <div id="othersstorystart">
+        
+        <img style="border-radius: 4%;" src="https://www.switchbacktravel.com/sites/default/files/images/articles/Winter%20jacket%20%28Rab%20Neutrino%20Pro%20in%20the%20mountains%29.jpg"
+                    height="220rem" width="130rem">
+                
+                   <div id="text_1_text_otheruser"><b> Gaurav </b> </div>
+            </div>
+            <div id="othersstorystart">
+        
+                <img style="border-radius: 4%;" src="https://www.meetopolis.com/wp-content/uploads/2019/11/best-cities-for-single-men.jpg"
+                            height="220rem" width="130rem">
+                        
+                           <div id="text_1_text_otheruser"><b> Tarun </b> </div>
+                    </div>
+                    <div id="othersstorystart">
+        
+                        <img style="border-radius: 4%;" src="https://img.traveltriangle.com/blog/wp-content/uploads/2019/01/shutterstock_1048935941.jpg"
+                        
+                                    height="220rem" width="130rem">
+                                
+                                   <div id="text_1_text_otheruser" style="margin-left: 2.5rem;"><b> Riya </b> </div>
+                            </div>
+        
+</div>
+
+<!--CENTER SECTION-->
+<div class="totally_ander">
+<div class="parent">
+    <div class="profile">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPz0Y3AEl50_hVSHBOP2-aHpenIEGto_GMYg&usqp=CAU">
+        <div class="one">
+            <h2>GAURAV</h2>
+            <p>post 4h ago</p>
+        </div>
+    </div>
+    <div class="description" style="margin-top: 7px;">Be Positive always. Best ever line till now</div>
+    <br>
+    <div class="image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfLV--CykgMxyvtz880A07QvJhVuSZLoROVw&usqp=CAU"></div>
+   <!--<div class="icons">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKnnVNTBrB7KwfJcgs06HWpY_nw-XNdon_2g&usqp=CAU"> 67 &nbsp;&nbsp;&nbsp;
+        <div>
+            <div> <a href="#transition"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd-NgM9ckS4z17fuN-KoRGbGubsUeM6Apueg&usqp=CAU"></a></div>
+            <div  id="transition">
+                <a href="#">X </a>
+                <p><form>
+                    <textarea placeholder="write a comment..." rows="7" cols="43"></textarea>
+                    <hr>
+                    <div class="typetext">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYZ_aStdQPbIkRBoOfMaXCOSLKYF2izYhQ2Q&usqp=CAU" class="camera"> photo/video&nbsp;&nbsp;&nbsp;<br>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjSxwxowdhYZDPb-XxsAbvevsVGai5K16XCw&usqp=CAU" class="emoji"> feeling/activity
+                    </div>
+                    <hr>
+                    <button type="submit">Post</button>
+                </form></p>
+            </div>
+        </div>
+        &nbsp; 45 &nbsp;&nbsp;&nbsp;
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3AJsnZq9jp_5FTUj85Wlxxh8NXTQSNIZ7Aw&usqp=CAU">&nbsp; 22 &nbsp;&nbsp;&nbsp;
+    </div>-->
+
+
+    <div class="icons">
+        <img src="https://thumbs.dreamstime.com/b/facebook-like-vector-icon-white-background-128850059.jpg" onclick="display1();display2();display3();" id="likeicon" ondblclick="sameimage();samelikes();samecolor();">
+        <p id="numberoflikes">67 </p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <p class="numberofthese">45</p> &nbsp;&nbsp;&nbsp;
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3AJsnZq9jp_5FTUj85Wlxxh8NXTQSNIZ7Aw&usqp=CAU">
+        <p class="numberofthese">22</p> &nbsp;&nbsp;&nbsp;
+   
+       
+        <div>
+            <div style="margin-left: -9rem;"> <a href="#transition"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd-NgM9ckS4z17fuN-KoRGbGubsUeM6Apueg&usqp=CAU"></a></div>
+            <div  id="transition">
+                <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSB4e01eitE1jWGlDDU2BKYgobzcqGaem2PYjFbYS-UsYoy11fv1uq2CEowpiysdtD5T8&usqp=CAU" class="back"></a>
+                <span class="wordcomment">Comments</span>
+                <hr>
+                <!--this is others comment part-->
+                <div id="commentbox">
+                    <div id="main">
+                        <div id="inside">
+                            <img src="https://dp.profilepics.in/profile_pictures/flower/flower_profile_pictures_01.jpg" id="image">
+                            <div class="side">
+                                <span id="name">Sneha</span><span class="comment">beautiful</span>
+                                <p class="base">
+                                    3h <span>reply</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="sideimage"><img src="https://cdn.pixabay.com/photo/2018/11/13/21/43/instagram-3814047_1280.png" id="commentlike" onclick="turnred();size()" ondblclick="same()"></div>
+                    </div>
+                
+                    
+                    <div id="main">
+                        <div id="inside">
+                            <img src="https://dp.profilepics.in/profile_pictures/flower/flower_profile_pictures_01.jpg" id="image">
+                            <div class="side">
+                                <span id="name">Garvit</span><span class="comment">beautiful</span>
+                                <p class="base">
+                                    3h <span>reply</span>
+                                </p>
+                            </div>
+                            <div class="sideimage"><img src="https://cdn.pixabay.com/photo/2018/11/13/21/43/instagram-3814047_1280.png" id="commentlike2" onclick="turnred2();size2()" ondblclick="same2()"></div>
+                        </div>
+                    </div>
+                
+                    <div id="main">
+                        <div id="inside">
+                            <img src="https://dp.profilepics.in/profile_pictures/flower/flower_profile_pictures_01.jpg" id="image">
+                            <div class="side">
+                                <span id="name">Rahul</span><span class="comment">beautiful</span>
+                                <p class="base">
+                                    3h <span>reply</span>
+                                </p>
+                            </div>
+                            <div class="sideimage"><img src="https://cdn.pixabay.com/photo/2018/11/13/21/43/instagram-3814047_1280.png" id="commentlike3" onclick="turnred3();size3()" ondblclick="same3()"></div>
+                        </div>
+                    </div>
+                
+                    <div id="main">
+                        <div id="inside">
+                            <img src="https://dp.profilepics.in/profile_pictures/flower/flower_profile_pictures_01.jpg" id="image">
+                            <div class="side">
+                                <span id="name">Prerna</span><span class="comment">beautiful</span>
+                                <p class="base">
+                                    3h <span>reply</span>
+                                </p>
+                            </div>
+                            <div class="sideimage"><img src="https://cdn.pixabay.com/photo/2018/11/13/21/43/instagram-3814047_1280.png" id="commentlike4" onclick="turnred4();size4()" ondblclick="same4()"></div>
+                        </div>
+                    </div>
+                
+                    <div id="main">
+                        <div id="inside">
+                            <img src="https://dp.profilepics.in/profile_pictures/flower/flower_profile_pictures_01.jpg" id="image">
+                            <div class="side">
+                                <span id="name">lakshay</span><span class="comment">beautiful</span>
+                                <p class="base">
+                                    3h <span>reply</span>
+                                </p>
+                            </div>
+                            <div class="sideimage"><img src="https://cdn.pixabay.com/photo/2018/11/13/21/43/instagram-3814047_1280.png" id="commentlike5" onclick="turnred5();size5()" ondblclick="same5()"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--here others comment ends-->
+
+                
+                <div id="hasironaudas"  class="variousemoji" >
+                    <img src="https://miro.medium.com/max/435/0*aMuzw0K4YNuZ6h8S.">
+                    <img src="https://i.insider.com/585847e3ca7f0ccb018b69b3?width=600&format=jpeg&auto=webp">
+                    <img src="https://w7.pngwing.com/pngs/582/603/png-transparent-emoji-smiley-sticker-good-mood-face-smiley-sticker-thumbnail.png">
+                    <img src="https://www.emoji.com/wp-content/uploads/filebase/icons/emoji-icon-glossy-01-07-person-body-folded-hands-(variation-2)-(fitz-1-2)-72dpi-forPersonalUseOnly.png">
+                    <img src="https://www.signwayonline.net/wp-content/uploads/2021/08/thumbs-up-3.jpg">
+                    <img src="https://pbs.twimg.com/profile_images/700118476417949696/z5ziecB2_400x400.png">
+                    <img src="https://i.pinimg.com/originals/8e/b4/de/8eb4dec9aab383784cc1211c8e9161ba.jpg">
+                    <img src="https://1.bp.blogspot.com/-HxiM_Ca4fPU/WFcpCqTHpnI/AAAAAAAATO0/aOCBQTY_rSYEFdCC1bA_clN_ZnIlnooowCLcB/s1600/clapping-hands.png">
+              <!-- <a href="#cool_dude">X</a>-->
+                </div>
+                
+                <br>
+                
+                <div style="display: flex; margin-top: -1.6rem; ">
+                    <img src="https://ecsphilly.org/app/uploads/2017/01/blank-profile-picture-973460_960_720.jpg" 
+                    style="height: 35px; width: 35px; border-radius: 50%;">
+                    <form id="form">
+                    <textarea placeholder="add a comment..." cols="45"></textarea>
+                    <!--
+                    <div class="typetext">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYZ_aStdQPbIkRBoOfMaXCOSLKYF2izYhQ2Q&usqp=CAU" class="camera"> photo/video&nbsp;&nbsp;&nbsp;<br>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjSxwxowdhYZDPb-XxsAbvevsVGai5K16XCw&usqp=CAU" class="emoji"> feeling/activity
+                    </div>
+                    <hr>
+                    --> <img onclick="toggleHead()" id="cool_dude" src="https://pbs.twimg.com/profile_images/700118476417949696/z5ziecB2_400x400.png">
+                   
+                  &nbsp;
+                    <button type="submit">Post</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+      <!--  <p class="numberofthese">45</p> &nbsp;&nbsp;&nbsp;
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3AJsnZq9jp_5FTUj85Wlxxh8NXTQSNIZ7Aw&usqp=CAU">
+        <p class="numberofthese">22</p> &nbsp;&nbsp;&nbsp;
+    --></div>
+</div>
+
+<div class="parent">
+    <div class="profile">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7NQDEMXrcdPncnrXWSk4K0S97475GydBj9Q&usqp=CAU">
+        <div class="one">
+            <h1>Rahul</h1>
+            <p>post 5h ago</p>
+        </div>
+    </div>
+    <div class="description"> 1. The greatest glory in living lies not in never falling, but in rising every time we fall. - ...<br>
+       2.Your time is limited, so don't waste it living someone else's life. .... - ...
+. -</div>
+    <br>
+    <div class="image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPU-HjOBnLy6JCmmZCnNumZkHMwyF3zm_nNQ&usqp=CAU"></div>
+   <!-- <div class="icons">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKnnVNTBrB7KwfJcgs06HWpY_nw-XNdon_2g&usqp=CAU"> 67 &nbsp;&nbsp;&nbsp;
+        <div>
+            <div> <a href="#transition2"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd-NgM9ckS4z17fuN-KoRGbGubsUeM6Apueg&usqp=CAU"></a></div>
+            <div  id="transition2">
+                <a href="#">X </a>
+                <p><form>
+                    <textarea placeholder="write a comment..." rows="7" cols="43"></textarea>
+                    <hr>
+                    <div class="typetext">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYZ_aStdQPbIkRBoOfMaXCOSLKYF2izYhQ2Q&usqp=CAU" class="camera"> photo/video&nbsp;&nbsp;&nbsp;<br>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjSxwxowdhYZDPb-XxsAbvevsVGai5K16XCw&usqp=CAU" class="emoji"> feeling/activity
+                    </div>
+                    <hr>
+                    <button type="submit">Post</button>
+                </form></p>
+            </div>
+        </div>
+        &nbsp; 45 &nbsp;&nbsp;&nbsp;
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3AJsnZq9jp_5FTUj85Wlxxh8NXTQSNIZ7Aw&usqp=CAU">&nbsp; 22 &nbsp;&nbsp;&nbsp;
+    </div>-->
+    <div class="icons">
+        <img src="https://thumbs.dreamstime.com/b/facebook-like-vector-icon-white-background-128850059.jpg" onclick="display1();display2();display3();" id="likeicon2" ondblclick="sameimage();samelikes();samecolor();">
+        <p id="numberoflikes">67 </p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <p class="numberofthese">45</p> &nbsp;&nbsp;&nbsp;
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3AJsnZq9jp_5FTUj85Wlxxh8NXTQSNIZ7Aw&usqp=CAU">
+        <p class="numberofthese">22</p> &nbsp;&nbsp;&nbsp;
+   
+       
+        <div>
+            <div style="margin-left: -9rem;"> <a href="#transition2"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd-NgM9ckS4z17fuN-KoRGbGubsUeM6Apueg&usqp=CAU"></a></div>
+            <div  id="transition2">
+                <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSB4e01eitE1jWGlDDU2BKYgobzcqGaem2PYjFbYS-UsYoy11fv1uq2CEowpiysdtD5T8&usqp=CAU" class="back"></a>
+                <span class="wordcomment">Comments</span>
+                <hr>
+                <!--this is others comment part-->
+                <div id="commentbox">
+                    <div id="main">
+                        <div id="inside">
+                            <img src="https://dp.profilepics.in/profile_pictures/flower/flower_profile_pictures_01.jpg" id="image">
+                            <div class="side">
+                                <span id="name">Sneha</span><span class="comment">beautiful</span>
+                                <p class="base">
+                                    3h <span>reply</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="sideimage"><img src="https://cdn.pixabay.com/photo/2018/11/13/21/43/instagram-3814047_1280.png" id="commentlike" onclick="turnred();size()" ondblclick="same()"></div>
+                    </div>
+                
+                    
+                    <div id="main">
+                        <div id="inside">
+                            <img src="https://dp.profilepics.in/profile_pictures/flower/flower_profile_pictures_01.jpg" id="image">
+                            <div class="side">
+                                <span id="name">Rahul</span><span class="comment">beautiful</span>
+                                <p class="base">
+                                    3h <span>reply</span>
+                                </p>
+                            </div>
+                            <div class="sideimage"><img src="https://cdn.pixabay.com/photo/2018/11/13/21/43/instagram-3814047_1280.png" id="commentlike2" onclick="turnred2();size2()" ondblclick="same2()"></div>
+                        </div>
+                    </div>
+                
+                    <div id="main">
+                        <div id="inside">
+                            <img src="https://dp.profilepics.in/profile_pictures/flower/flower_profile_pictures_01.jpg" id="image">
+                            <div class="side">
+                                <span id="name">Garvit</span><span class="comment">beautiful</span>
+                                <p class="base">
+                                    3h <span>reply</span>
+                                </p>
+                            </div>
+                            <div class="sideimage"><img src="https://cdn.pixabay.com/photo/2018/11/13/21/43/instagram-3814047_1280.png" id="commentlike3" onclick="turnred3();size3()" ondblclick="same3()"></div>
+                        </div>
+                    </div>
+                
+                    <div id="main">
+                        <div id="inside">
+                            <img src="https://dp.profilepics.in/profile_pictures/flower/flower_profile_pictures_01.jpg" id="image">
+                            <div class="side">
+                                <span id="name">prerna</span><span class="comment">beautiful</span>
+                                <p class="base">
+                                    3h <span>reply</span>
+                                </p>
+                            </div>
+                            <div class="sideimage"><img src="https://cdn.pixabay.com/photo/2018/11/13/21/43/instagram-3814047_1280.png" id="commentlike4" onclick="turnred4();size4()" ondblclick="same4()"></div>
+                        </div>
+                    </div>
+                
+                    <div id="main">
+                        <div id="inside">
+                            <img src="https://dp.profilepics.in/profile_pictures/flower/flower_profile_pictures_01.jpg" id="image">
+                            <div class="side">
+                                <span id="name">Himanshu</span><span class="comment">beautiful</span>
+                                <p class="base">
+                                    3h <span>reply</span>
+                                </p>
+                            </div>
+                            <div class="sideimage"><img src="https://cdn.pixabay.com/photo/2018/11/13/21/43/instagram-3814047_1280.png" id="commentlike5" onclick="turnred5();size5()" ondblclick="same5()"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--here others comment ends-->
+
+                
+                <div id="hasironaudas2"  class="variousemoji" >
+                    <img src="https://miro.medium.com/max/435/0*aMuzw0K4YNuZ6h8S.">
+                    <img src="https://i.insider.com/585847e3ca7f0ccb018b69b3?width=600&format=jpeg&auto=webp">
+                    <img src="https://w7.pngwing.com/pngs/582/603/png-transparent-emoji-smiley-sticker-good-mood-face-smiley-sticker-thumbnail.png">
+                    <img src="https://www.emoji.com/wp-content/uploads/filebase/icons/emoji-icon-glossy-01-07-person-body-folded-hands-(variation-2)-(fitz-1-2)-72dpi-forPersonalUseOnly.png">
+                    <img src="https://www.signwayonline.net/wp-content/uploads/2021/08/thumbs-up-3.jpg">
+                    <img src="https://pbs.twimg.com/profile_images/700118476417949696/z5ziecB2_400x400.png">
+                    <img src="https://i.pinimg.com/originals/8e/b4/de/8eb4dec9aab383784cc1211c8e9161ba.jpg">
+                    <img src="https://1.bp.blogspot.com/-HxiM_Ca4fPU/WFcpCqTHpnI/AAAAAAAATO0/aOCBQTY_rSYEFdCC1bA_clN_ZnIlnooowCLcB/s1600/clapping-hands.png">
+              <!-- <a href="#cool_dude">X</a>-->
+                </div>
+                
+                <br>
+                
+                <div style="display: flex; margin-top: -1.6rem; ">
+                    <img src="https://ecsphilly.org/app/uploads/2017/01/blank-profile-picture-973460_960_720.jpg" 
+                    style="height: 35px; width: 35px; border-radius: 50%;">
+                    <form id="form">
+                    <textarea placeholder="add a comment..." cols="45"></textarea>
+                    <!--
+                    <div class="typetext">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYZ_aStdQPbIkRBoOfMaXCOSLKYF2izYhQ2Q&usqp=CAU" class="camera"> photo/video&nbsp;&nbsp;&nbsp;<br>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjSxwxowdhYZDPb-XxsAbvevsVGai5K16XCw&usqp=CAU" class="emoji"> feeling/activity
+                    </div>
+                    <hr>
+                    --> <img onclick="toggleHead()" id="cool_dude" src="https://pbs.twimg.com/profile_images/700118476417949696/z5ziecB2_400x400.png">
+                   
+                  &nbsp;
+                    <button type="submit">Post</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+      <!--  <p class="numberofthese">45</p> &nbsp;&nbsp;&nbsp;
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3AJsnZq9jp_5FTUj85Wlxxh8NXTQSNIZ7Aw&usqp=CAU">
+        <p class="numberofthese">22</p> &nbsp;&nbsp;&nbsp;
+    --></div>
+</div>
+
+<div class="parent">
+    <div class="profile">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOpZthJmraoVdEIi_K1Web43iJUgOb4s7uZQ&usqp=CAU">
+        <div class="one">
+            <h1>Rohan Kumar</h1>
+            <p>post 6h ago</p>
+        </div>
+    </div>
+    <div class="description">"Let no one ever come to you without leaving better and happier." "If you don't like the road you're walking, start paving another one." "Of all forms of caution, caution in love is perhaps the most fatal to true happiness." "Happiness is when what you think, what you say, and what you do are in harmony."</div>
+    <br>
+    <div class="image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgJWLgakKQf1U9JntGg05Pnnrhuke5lTacwA&usqp=CAU"></div>
+   <!-- <div class="icons">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKnnVNTBrB7KwfJcgs06HWpY_nw-XNdon_2g&usqp=CAU"> 67 &nbsp;&nbsp;&nbsp;
+        <div>
+            <div> <a href="#transition"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd-NgM9ckS4z17fuN-KoRGbGubsUeM6Apueg&usqp=CAU"></a></div>
+            <div  id="transition">
+                <a href="#">X </a>
+                <p><form>
+                    <textarea placeholder="write a comment..." rows="7" cols="43"></textarea>
+                    <hr>
+                    <div class="typetext">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYZ_aStdQPbIkRBoOfMaXCOSLKYF2izYhQ2Q&usqp=CAU" class="camera"> photo/video&nbsp;&nbsp;&nbsp;<br>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjSxwxowdhYZDPb-XxsAbvevsVGai5K16XCw&usqp=CAU" class="emoji"> feeling/activity
+                    </div>
+                    <hr>
+                    <button type="submit">Post</button>
+                </form></p>
+            </div>
+        </div>
+        &nbsp; 45 &nbsp;&nbsp;&nbsp;
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3AJsnZq9jp_5FTUj85Wlxxh8NXTQSNIZ7Aw&usqp=CAU">&nbsp; 22 &nbsp;&nbsp;&nbsp;
+    </div>-->
+    <div class="icons">
+        <img src="https://thumbs.dreamstime.com/b/facebook-like-vector-icon-white-background-128850059.jpg" onclick="display1();display2();display3();" id="likeicon" ondblclick="sameimage();samelikes();samecolor();">
+        <p id="numberoflikes">67 </p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <p class="numberofthese">45</p> &nbsp;&nbsp;&nbsp;
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3AJsnZq9jp_5FTUj85Wlxxh8NXTQSNIZ7Aw&usqp=CAU">
+        <p class="numberofthese">22</p> &nbsp;&nbsp;&nbsp;
+   
+       
+        <div>
+            <div style="margin-left: -9rem;"> <a href="#transition3"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd-NgM9ckS4z17fuN-KoRGbGubsUeM6Apueg&usqp=CAU"></a></div>
+            <div  id="transition3">
+                <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSB4e01eitE1jWGlDDU2BKYgobzcqGaem2PYjFbYS-UsYoy11fv1uq2CEowpiysdtD5T8&usqp=CAU" class="back"></a>
+                <span class="wordcomment">Comments</span>
+                <hr>
+                <!--this is others comment part-->
+                <div id="commentbox">
+                    <div id="main">
+                        <div id="inside">
+                            <img src="https://dp.profilepics.in/profile_pictures/flower/flower_profile_pictures_01.jpg" id="image">
+                            <div class="side">
+                                <span id="name">Tarun</span><span class="comment">beautiful</span>
+                                <p class="base">
+                                    3h <span>reply</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="sideimage"><img src="https://cdn.pixabay.com/photo/2018/11/13/21/43/instagram-3814047_1280.png" id="commentlike" onclick="turnred();size()" ondblclick="same()"></div>
+                    </div>
+                
+                    
+                    <div id="main">
+                        <div id="inside">
+                            <img src="https://dp.profilepics.in/profile_pictures/flower/flower_profile_pictures_01.jpg" id="image">
+                            <div class="side">
+                                <span id="name">abishek</span><span class="comment">beautiful</span>
+                                <p class="base">
+                                    3h <span>reply</span>
+                                </p>
+                            </div>
+                            <div class="sideimage"><img src="https://cdn.pixabay.com/photo/2018/11/13/21/43/instagram-3814047_1280.png" id="commentlike2" onclick="turnred2();size2()" ondblclick="same2()"></div>
+                        </div>
+                    </div>
+                
+                    <div id="main">
+                        <div id="inside">
+                            <img src="https://dp.profilepics.in/profile_pictures/flower/flower_profile_pictures_01.jpg" id="image">
+                            <div class="side">
+                                <span id="name">Anuj</span><span class="comment">beautiful</span>
+                                <p class="base">
+                                    3h <span>reply</span>
+                                </p>
+                            </div>
+                            <div class="sideimage"><img src="https://cdn.pixabay.com/photo/2018/11/13/21/43/instagram-3814047_1280.png" id="commentlike3" onclick="turnred3();size3()" ondblclick="same3()"></div>
+                        </div>
+                    </div>
+                
+                    <div id="main">
+                        <div id="inside">
+                            <img src="https://dp.profilepics.in/profile_pictures/flower/flower_profile_pictures_01.jpg" id="image">
+                            <div class="side">
+                                <span id="name">jaypee</span><span class="comment">beautiful</span>
+                                <p class="base">
+                                    3h <span>reply</span>
+                                </p>
+                            </div>
+                            <div class="sideimage"><img src="https://cdn.pixabay.com/photo/2018/11/13/21/43/instagram-3814047_1280.png" id="commentlike4" onclick="turnred4();size4()" ondblclick="same4()"></div>
+                        </div>
+                    </div>
+                
+                    <div id="main">
+                        <div id="inside">
+                            <img src="https://dp.profilepics.in/profile_pictures/flower/flower_profile_pictures_01.jpg" id="image">
+                            <div class="side">
+                                <span id="name">prerna</span><span class="comment">beautiful</span>
+                                <p class="base">
+                                    3h <span>reply</span>
+                                </p>
+                            </div>
+                            <div class="sideimage"><img src="https://cdn.pixabay.com/photo/2018/11/13/21/43/instagram-3814047_1280.png" id="commentlike5" onclick="turnred5();size5()" ondblclick="same5()"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--here others comment ends-->
+
+                
+                <div id="hasironaudas2"  class="variousemoji" >
+                    <img src="https://miro.medium.com/max/435/0*aMuzw0K4YNuZ6h8S.">
+                    <img src="https://i.insider.com/585847e3ca7f0ccb018b69b3?width=600&format=jpeg&auto=webp">
+                    <img src="https://w7.pngwing.com/pngs/582/603/png-transparent-emoji-smiley-sticker-good-mood-face-smiley-sticker-thumbnail.png">
+                    <img src="https://www.emoji.com/wp-content/uploads/filebase/icons/emoji-icon-glossy-01-07-person-body-folded-hands-(variation-2)-(fitz-1-2)-72dpi-forPersonalUseOnly.png">
+                    <img src="https://www.signwayonline.net/wp-content/uploads/2021/08/thumbs-up-3.jpg">
+                    <img src="https://pbs.twimg.com/profile_images/700118476417949696/z5ziecB2_400x400.png">
+                    <img src="https://i.pinimg.com/originals/8e/b4/de/8eb4dec9aab383784cc1211c8e9161ba.jpg">
+                    <img src="https://1.bp.blogspot.com/-HxiM_Ca4fPU/WFcpCqTHpnI/AAAAAAAATO0/aOCBQTY_rSYEFdCC1bA_clN_ZnIlnooowCLcB/s1600/clapping-hands.png">
+              <!-- <a href="#cool_dude">X</a>-->
+                </div>
+                
+                <br>
+                
+                <div style="display: flex; margin-top: -1.6rem; ">
+                    <img src="https://ecsphilly.org/app/uploads/2017/01/blank-profile-picture-973460_960_720.jpg" 
+                    style="height: 35px; width: 35px; border-radius: 50%;">
+                    <form id="form">
+                    <textarea placeholder="add a comment..." cols="45"></textarea>
+                    <!--
+                    <div class="typetext">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYZ_aStdQPbIkRBoOfMaXCOSLKYF2izYhQ2Q&usqp=CAU" class="camera"> photo/video&nbsp;&nbsp;&nbsp;<br>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjSxwxowdhYZDPb-XxsAbvevsVGai5K16XCw&usqp=CAU" class="emoji"> feeling/activity
+                    </div>
+                    <hr>
+                    --> <img onclick="toggleHead()" id="cool_dude" src="https://pbs.twimg.com/profile_images/700118476417949696/z5ziecB2_400x400.png">
+                   
+                  &nbsp;
+                    <button type="submit">Post</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+      <!--  <p class="numberofthese">45</p> &nbsp;&nbsp;&nbsp;
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3AJsnZq9jp_5FTUj85Wlxxh8NXTQSNIZ7Aw&usqp=CAU">
+        <p class="numberofthese">22</p> &nbsp;&nbsp;&nbsp;
+    --></div>
+</div>
+
+<div class="parent">
+    <div class="profile">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4X-UKegvFJk9xQtCqkjcj7m1Wr-cUWk4P0Q&usqp=CAU">
+        <div class="one">
+            <h1>Ankit Kapoor</h1>
+            <p>post 10h ago</p>
+        </div>
+    </div>
+    <div class="description">“No matter how hard the past is, you can always begin again.” </div>
+    <br>
+    <div class="image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4ifocoFoJ2e7-vfYoDzrlDtob6s40hEnPsg&usqp=CAU"></div>
+   <!--<div class="icons">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKnnVNTBrB7KwfJcgs06HWpY_nw-XNdon_2g&usqp=CAU"> 67 &nbsp;&nbsp;&nbsp;
+        <div>
+            <div> <a href="#transition"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd-NgM9ckS4z17fuN-KoRGbGubsUeM6Apueg&usqp=CAU"></a></div>
+            <div  id="transition">
+                <a href="#">X </a>
+                <p><form>
+                    <textarea placeholder="write a comment..." rows="7" cols="43"></textarea>
+                    <hr>
+                    <div class="typetext">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYZ_aStdQPbIkRBoOfMaXCOSLKYF2izYhQ2Q&usqp=CAU" class="camera"> photo/video&nbsp;&nbsp;&nbsp;<br>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjSxwxowdhYZDPb-XxsAbvevsVGai5K16XCw&usqp=CAU" class="emoji"> feeling/activity
+                    </div>
+                    <hr>
+                    <button type="submit">Post</button>
+                </form></p>
+            </div>
+        </div>
+        &nbsp; 45 &nbsp;&nbsp;&nbsp;
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3AJsnZq9jp_5FTUj85Wlxxh8NXTQSNIZ7Aw&usqp=CAU">&nbsp; 22 &nbsp;&nbsp;&nbsp;
+    </div>-->
+    <div class="icons">
+        <img src="https://thumbs.dreamstime.com/b/facebook-like-vector-icon-white-background-128850059.jpg" onclick="display1();display2();display3();" id="likeicon" ondblclick="sameimage();samelikes();samecolor();">
+        <p id="numberoflikes">67 </p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <p class="numberofthese">45</p> &nbsp;&nbsp;&nbsp;
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3AJsnZq9jp_5FTUj85Wlxxh8NXTQSNIZ7Aw&usqp=CAU">
+        <p class="numberofthese">22</p> &nbsp;&nbsp;&nbsp;
+   
+       
+        <div>
+            <div style="margin-left: -9rem;"> <a href="#transition4"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd-NgM9ckS4z17fuN-KoRGbGubsUeM6Apueg&usqp=CAU"></a></div>
+            <div  id="transition4">
+                <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSB4e01eitE1jWGlDDU2BKYgobzcqGaem2PYjFbYS-UsYoy11fv1uq2CEowpiysdtD5T8&usqp=CAU" class="back"></a>
+                <span class="wordcomment">Comments</span>
+                <hr>
+                <!--this is others comment part-->
+                <div id="commentbox">
+                    <div id="main">
+                        <div id="inside">
+                            <img src="https://dp.profilepics.in/profile_pictures/flower/flower_profile_pictures_01.jpg" id="image">
+                            <div class="side">
+                                <span id="name">Someone</span><span class="comment">beautiful</span>
+                                <p class="base">
+                                    3h <span>reply</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="sideimage"><img src="https://cdn.pixabay.com/photo/2018/11/13/21/43/instagram-3814047_1280.png" id="commentlike" onclick="turnred();size()" ondblclick="same()"></div>
+                    </div>
+                
+                    
+                    <div id="main">
+                        <div id="inside">
+                            <img src="https://dp.profilepics.in/profile_pictures/flower/flower_profile_pictures_01.jpg" id="image">
+                            <div class="side">
+                                <span id="name">Someone</span><span class="comment">beautiful</span>
+                                <p class="base">
+                                    3h <span>reply</span>
+                                </p>
+                            </div>
+                            <div class="sideimage"><img src="https://cdn.pixabay.com/photo/2018/11/13/21/43/instagram-3814047_1280.png" id="commentlike2" onclick="turnred2();size2()" ondblclick="same2()"></div>
+                        </div>
+                    </div>
+                
+                    <div id="main">
+                        <div id="inside">
+                            <img src="https://dp.profilepics.in/profile_pictures/flower/flower_profile_pictures_01.jpg" id="image">
+                            <div class="side">
+                                <span id="name">Someone</span><span class="comment">beautiful</span>
+                                <p class="base">
+                                    3h <span>reply</span>
+                                </p>
+                            </div>
+                            <div class="sideimage"><img src="https://cdn.pixabay.com/photo/2018/11/13/21/43/instagram-3814047_1280.png" id="commentlike3" onclick="turnred3();size3()" ondblclick="same3()"></div>
+                        </div>
+                    </div>
+                
+                    <div id="main">
+                        <div id="inside">
+                            <img src="https://dp.profilepics.in/profile_pictures/flower/flower_profile_pictures_01.jpg" id="image">
+                            <div class="side">
+                                <span id="name">Someone</span><span class="comment">beautiful</span>
+                                <p class="base">
+                                    3h <span>reply</span>
+                                </p>
+                            </div>
+                            <div class="sideimage"><img src="https://cdn.pixabay.com/photo/2018/11/13/21/43/instagram-3814047_1280.png" id="commentlike4" onclick="turnred4();size4()" ondblclick="same4()"></div>
+                        </div>
+                    </div>
+                
+                    <div id="main">
+                        <div id="inside">
+                            <img src="https://dp.profilepics.in/profile_pictures/flower/flower_profile_pictures_01.jpg" id="image">
+                            <div class="side">
+                                <span id="name">Someone</span><span class="comment">beautiful</span>
+                                <p class="base">
+                                    3h <span>reply</span>
+                                </p>
+                            </div>
+                            <div class="sideimage"><img src="https://cdn.pixabay.com/photo/2018/11/13/21/43/instagram-3814047_1280.png" id="commentlike5" onclick="turnred5();size5()" ondblclick="same5()"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--here others comment ends-->
+
+                
+                <div id="hasironaudas2"  class="variousemoji" >
+                    <img src="https://miro.medium.com/max/435/0*aMuzw0K4YNuZ6h8S.">
+                    <img src="https://i.insider.com/585847e3ca7f0ccb018b69b3?width=600&format=jpeg&auto=webp">
+                    <img src="https://w7.pngwing.com/pngs/582/603/png-transparent-emoji-smiley-sticker-good-mood-face-smiley-sticker-thumbnail.png">
+                    <img src="https://www.emoji.com/wp-content/uploads/filebase/icons/emoji-icon-glossy-01-07-person-body-folded-hands-(variation-2)-(fitz-1-2)-72dpi-forPersonalUseOnly.png">
+                    <img src="https://www.signwayonline.net/wp-content/uploads/2021/08/thumbs-up-3.jpg">
+                    <img src="https://pbs.twimg.com/profile_images/700118476417949696/z5ziecB2_400x400.png">
+                    <img src="https://i.pinimg.com/originals/8e/b4/de/8eb4dec9aab383784cc1211c8e9161ba.jpg">
+                    <img src="https://1.bp.blogspot.com/-HxiM_Ca4fPU/WFcpCqTHpnI/AAAAAAAATO0/aOCBQTY_rSYEFdCC1bA_clN_ZnIlnooowCLcB/s1600/clapping-hands.png">
+              <!-- <a href="#cool_dude">X</a>-->
+                </div>
+                
+                <br>
+                
+                <div style="display: flex; margin-top: -1.6rem; ">
+                    <img src="https://ecsphilly.org/app/uploads/2017/01/blank-profile-picture-973460_960_720.jpg" 
+                    style="height: 35px; width: 35px; border-radius: 50%;">
+                    <form id="form">
+                    <textarea placeholder="add a comment..." cols="45"></textarea>
+                    <!--
+                    <div class="typetext">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYZ_aStdQPbIkRBoOfMaXCOSLKYF2izYhQ2Q&usqp=CAU" class="camera"> photo/video&nbsp;&nbsp;&nbsp;<br>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjSxwxowdhYZDPb-XxsAbvevsVGai5K16XCw&usqp=CAU" class="emoji"> feeling/activity
+                    </div>
+                    <hr>
+                    --> <img onclick="toggleHead()" id="cool_dude" src="https://pbs.twimg.com/profile_images/700118476417949696/z5ziecB2_400x400.png">
+                   
+                  &nbsp;
+                    <button type="submit">Post</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+      <!--  <p class="numberofthese">45</p> &nbsp;&nbsp;&nbsp;
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3AJsnZq9jp_5FTUj85Wlxxh8NXTQSNIZ7Aw&usqp=CAU">
+        <p class="numberofthese">22</p> &nbsp;&nbsp;&nbsp;
+    --></div>
+</div>
+
+<div class="parent">
+    <div class="profile">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4X-UKegvFJk9xQtCqkjcj7m1Wr-cUWk4P0Q&usqp=CAU">
+        <div class="one">
+            <h1>Amiti</h1>
+            <p>post 22h ago</p>
+        </div>
+    </div>
+    <div class="description">“ Today's motto: The more you sweat in training, the less you'll bleed in battle. The more you sweat in training, the less you'll bleed in battle. ”</div>
+    <br>
+    <div class="image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpaSMoCn0gjV0mk5dIwVa8SPF_9DvvIkiNbA&usqp=CAU"></div>
+   <!-- <div class="icons">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKnnVNTBrB7KwfJcgs06HWpY_nw-XNdon_2g&usqp=CAU"> 67 &nbsp;&nbsp;&nbsp;
+        <div>
+            <div> <a href="#transition"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd-NgM9ckS4z17fuN-KoRGbGubsUeM6Apueg&usqp=CAU"></a></div>
+            <div  id="transition">
+                <a href="#">X </a>
+                <p><form>
+                    <textarea placeholder="write a comment..." rows="7" cols="43"></textarea>
+                    <hr>
+                    <div class="typetext">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYZ_aStdQPbIkRBoOfMaXCOSLKYF2izYhQ2Q&usqp=CAU" class="camera"> photo/video&nbsp;&nbsp;&nbsp;<br>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjSxwxowdhYZDPb-XxsAbvevsVGai5K16XCw&usqp=CAU" class="emoji"> feeling/activity
+                    </div>
+                    <hr>
+                    <button type="submit">Post</button>
+                </form></p>
+            </div>
+        </div>
+        &nbsp; 45 &nbsp;&nbsp;&nbsp;
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3AJsnZq9jp_5FTUj85Wlxxh8NXTQSNIZ7Aw&usqp=CAU">&nbsp; 22 &nbsp;&nbsp;&nbsp;
+    </div>-->
+    <div class="icons">
+        <img src="https://thumbs.dreamstime.com/b/facebook-like-vector-icon-white-background-128850059.jpg" onclick="display1();display2();display3();" id="likeicon" ondblclick="sameimage();samelikes();samecolor();">
+        <p id="numberoflikes">67 </p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <p class="numberofthese">45</p> &nbsp;&nbsp;&nbsp;
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3AJsnZq9jp_5FTUj85Wlxxh8NXTQSNIZ7Aw&usqp=CAU">
+        <p class="numberofthese">22</p> &nbsp;&nbsp;&nbsp;
+   
+       
+        <div>
+            <div style="margin-left: -9rem;"> <a href="#transition5"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd-NgM9ckS4z17fuN-KoRGbGubsUeM6Apueg&usqp=CAU"></a></div>
+            <div  id="transition5">
+                <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSB4e01eitE1jWGlDDU2BKYgobzcqGaem2PYjFbYS-UsYoy11fv1uq2CEowpiysdtD5T8&usqp=CAU" class="back"></a>
+                <span class="wordcomment">Comments</span>
+                <hr>
+                <!--this is others comment part-->
+                <div id="commentbox">
+                    <div id="main">
+                        <div id="inside">
+                            <img src="https://dp.profilepics.in/profile_pictures/flower/flower_profile_pictures_01.jpg" id="image">
+                            <div class="side">
+                                <span id="name">Someone</span><span class="comment">beautiful</span>
+                                <p class="base">
+                                    3h <span>reply</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="sideimage"><img src="https://cdn.pixabay.com/photo/2018/11/13/21/43/instagram-3814047_1280.png" id="commentlike" onclick="turnred();size()" ondblclick="same()"></div>
+                    </div>
+                
+                    
+                    <div id="main">
+                        <div id="inside">
+                            <img src="https://dp.profilepics.in/profile_pictures/flower/flower_profile_pictures_01.jpg" id="image">
+                            <div class="side">
+                                <span id="name">Someone</span><span class="comment">beautiful</span>
+                                <p class="base">
+                                    3h <span>reply</span>
+                                </p>
+                            </div>
+                            <div class="sideimage"><img src="https://cdn.pixabay.com/photo/2018/11/13/21/43/instagram-3814047_1280.png" id="commentlike2" onclick="turnred2();size2()" ondblclick="same2()"></div>
+                        </div>
+                    </div>
+                
+                    <div id="main">
+                        <div id="inside">
+                            <img src="https://dp.profilepics.in/profile_pictures/flower/flower_profile_pictures_01.jpg" id="image">
+                            <div class="side">
+                                <span id="name">Someone</span><span class="comment">beautiful</span>
+                                <p class="base">
+                                    3h <span>reply</span>
+                                </p>
+                            </div>
+                            <div class="sideimage"><img src="https://cdn.pixabay.com/photo/2018/11/13/21/43/instagram-3814047_1280.png" id="commentlike3" onclick="turnred3();size3()" ondblclick="same3()"></div>
+                        </div>
+                    </div>
+                
+                    <div id="main">
+                        <div id="inside">
+                            <img src="https://dp.profilepics.in/profile_pictures/flower/flower_profile_pictures_01.jpg" id="image">
+                            <div class="side">
+                                <span id="name">Someone</span><span class="comment">beautiful</span>
+                                <p class="base">
+                                    3h <span>reply</span>
+                                </p>
+                            </div>
+                            <div class="sideimage"><img src="https://cdn.pixabay.com/photo/2018/11/13/21/43/instagram-3814047_1280.png" id="commentlike4" onclick="turnred4();size4()" ondblclick="same4()"></div>
+                        </div>
+                    </div>
+                
+                    <div id="main">
+                        <div id="inside">
+                            <img src="https://dp.profilepics.in/profile_pictures/flower/flower_profile_pictures_01.jpg" id="image">
+                            <div class="side">
+                                <span id="name">Someone</span><span class="comment">beautiful</span>
+                                <p class="base">
+                                    3h <span>reply</span>
+                                </p>
+                            </div>
+                            <div class="sideimage"><img src="https://cdn.pixabay.com/photo/2018/11/13/21/43/instagram-3814047_1280.png" id="commentlike5" onclick="turnred5();size5()" ondblclick="same5()"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--here others comment ends-->
+
+                
+                <div id="hasironaudas2"  class="variousemoji" >
+                    <img src="https://miro.medium.com/max/435/0*aMuzw0K4YNuZ6h8S.">
+                    <img src="https://i.insider.com/585847e3ca7f0ccb018b69b3?width=600&format=jpeg&auto=webp">
+                    <img src="https://w7.pngwing.com/pngs/582/603/png-transparent-emoji-smiley-sticker-good-mood-face-smiley-sticker-thumbnail.png">
+                    <img src="https://www.emoji.com/wp-content/uploads/filebase/icons/emoji-icon-glossy-01-07-person-body-folded-hands-(variation-2)-(fitz-1-2)-72dpi-forPersonalUseOnly.png">
+                    <img src="https://www.signwayonline.net/wp-content/uploads/2021/08/thumbs-up-3.jpg">
+                    <img src="https://pbs.twimg.com/profile_images/700118476417949696/z5ziecB2_400x400.png">
+                    <img src="https://i.pinimg.com/originals/8e/b4/de/8eb4dec9aab383784cc1211c8e9161ba.jpg">
+                    <img src="https://1.bp.blogspot.com/-HxiM_Ca4fPU/WFcpCqTHpnI/AAAAAAAATO0/aOCBQTY_rSYEFdCC1bA_clN_ZnIlnooowCLcB/s1600/clapping-hands.png">
+              <!-- <a href="#cool_dude">X</a>-->
+                </div>
+                
+                <br>
+                
+                <div style="display: flex; margin-top: -1.6rem; ">
+                    <img src="https://ecsphilly.org/app/uploads/2017/01/blank-profile-picture-973460_960_720.jpg" 
+                    style="height: 35px; width: 35px; border-radius: 50%;">
+                    <form id="form">
+                    <textarea placeholder="add a comment..." cols="45"></textarea>
+                    <!--
+                    <div class="typetext">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYZ_aStdQPbIkRBoOfMaXCOSLKYF2izYhQ2Q&usqp=CAU" class="camera"> photo/video&nbsp;&nbsp;&nbsp;<br>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjSxwxowdhYZDPb-XxsAbvevsVGai5K16XCw&usqp=CAU" class="emoji"> feeling/activity
+                    </div>
+                    <hr>
+                    --> <img onclick="toggleHead()" id="cool_dude" src="https://pbs.twimg.com/profile_images/700118476417949696/z5ziecB2_400x400.png">
+                   
+                  &nbsp;
+                    <button type="submit">Post</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+      <!--  <p class="numberofthese">45</p> &nbsp;&nbsp;&nbsp;
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3AJsnZq9jp_5FTUj85Wlxxh8NXTQSNIZ7Aw&usqp=CAU">
+        <p class="numberofthese">22</p> &nbsp;&nbsp;&nbsp;
+    --></div>
+</div>
+
+<div class="parent">
+    <div class="profile">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCSun1B4Xq0Pih_bTJ48Yl6Fx4g0cqjPp4ug&usqp=CAU">
+        <div class="one">
+            <h1>Sanjana</h1>
+            <p>post 1d ago</p>
+        </div>
+    </div>
+    <div class="description"><ul><li>“Live as if you were to die tomorrow. ...</li>
+       <li> “That which does not kill us makes us stronger.” ...</li>
+       <li> “Be who you are and say what you feel, because those who mind don't matter and those who matter don't mind.” ...</li>
+       <li> “We must not allow other people's limited perceptions to define us. </li></ul></div>
+    <br>
+    <div class="image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2ixQ265ia8H1gAK5_4lTTvtktQT3xedTq7A&usqp=CAU"></div>
+    <!--<div class="icons">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKnnVNTBrB7KwfJcgs06HWpY_nw-XNdon_2g&usqp=CAU"> 67 &nbsp;&nbsp;&nbsp;
+        <div>
+            <div> <a href="#transition"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd-NgM9ckS4z17fuN-KoRGbGubsUeM6Apueg&usqp=CAU"></a></div>
+            <div  id="transition">
+                <a href="#">X </a>
+                <p><form>
+                    <textarea placeholder="write a comment..." rows="7" cols="43"></textarea>
+                    <hr>
+                    <div class="typetext">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYZ_aStdQPbIkRBoOfMaXCOSLKYF2izYhQ2Q&usqp=CAU" class="camera"> photo/video&nbsp;&nbsp;&nbsp;<br>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjSxwxowdhYZDPb-XxsAbvevsVGai5K16XCw&usqp=CAU" class="emoji"> feeling/activity
+                    </div>
+                    <hr>
+                    <button type="submit">Post</button>
+                </form></p>
+            </div>
+        </div>
+        &nbsp; 45 &nbsp;&nbsp;&nbsp;
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3AJsnZq9jp_5FTUj85Wlxxh8NXTQSNIZ7Aw&usqp=CAU">&nbsp; 22 &nbsp;&nbsp;&nbsp;
+    </div>-->
+    <div class="icons">
+        <img src="https://thumbs.dreamstime.com/b/facebook-like-vector-icon-white-background-128850059.jpg" onclick="display1();display2();display3();" id="likeicon" ondblclick="sameimage();samelikes();samecolor();">
+        <p id="numberoflikes">67 </p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <p class="numberofthese">45</p> &nbsp;&nbsp;&nbsp;
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3AJsnZq9jp_5FTUj85Wlxxh8NXTQSNIZ7Aw&usqp=CAU">
+        <p class="numberofthese">22</p> &nbsp;&nbsp;&nbsp;
+   
+       
+        <div>
+            <div style="margin-left: -9rem;"> <a href="#transition6"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd-NgM9ckS4z17fuN-KoRGbGubsUeM6Apueg&usqp=CAU"></a></div>
+            <div  id="transition6">
+                <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSB4e01eitE1jWGlDDU2BKYgobzcqGaem2PYjFbYS-UsYoy11fv1uq2CEowpiysdtD5T8&usqp=CAU" class="back"></a>
+                <span class="wordcomment">Comments</span>
+                <hr>
+                <!--this is others comment part-->
+                <div id="commentbox">
+                    <div id="main">
+                        <div id="inside">
+                            <img src="https://dp.profilepics.in/profile_pictures/flower/flower_profile_pictures_01.jpg" id="image">
+                            <div class="side">
+                                <span id="name">Someone</span><span class="comment">beautiful</span>
+                                <p class="base">
+                                    3h <span>reply</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="sideimage"><img src="https://cdn.pixabay.com/photo/2018/11/13/21/43/instagram-3814047_1280.png" id="commentlike" onclick="turnred();size()" ondblclick="same()"></div>
+                    </div>
+                
+                    
+                    <div id="main">
+                        <div id="inside">
+                            <img src="https://dp.profilepics.in/profile_pictures/flower/flower_profile_pictures_01.jpg" id="image">
+                            <div class="side">
+                                <span id="name">Someone</span><span class="comment">beautiful</span>
+                                <p class="base">
+                                    3h <span>reply</span>
+                                </p>
+                            </div>
+                            <div class="sideimage"><img src="https://cdn.pixabay.com/photo/2018/11/13/21/43/instagram-3814047_1280.png" id="commentlike2" onclick="turnred2();size2()" ondblclick="same2()"></div>
+                        </div>
+                    </div>
+                
+                    <div id="main">
+                        <div id="inside">
+                            <img src="https://dp.profilepics.in/profile_pictures/flower/flower_profile_pictures_01.jpg" id="image">
+                            <div class="side">
+                                <span id="name">Someone</span><span class="comment">beautiful</span>
+                                <p class="base">
+                                    3h <span>reply</span>
+                                </p>
+                            </div>
+                            <div class="sideimage"><img src="https://cdn.pixabay.com/photo/2018/11/13/21/43/instagram-3814047_1280.png" id="commentlike3" onclick="turnred3();size3()" ondblclick="same3()"></div>
+                        </div>
+                    </div>
+                
+                    <div id="main">
+                        <div id="inside">
+                            <img src="https://dp.profilepics.in/profile_pictures/flower/flower_profile_pictures_01.jpg" id="image">
+                            <div class="side">
+                                <span id="name">Someone</span><span class="comment">beautiful</span>
+                                <p class="base">
+                                    3h <span>reply</span>
+                                </p>
+                            </div>
+                            <div class="sideimage"><img src="https://cdn.pixabay.com/photo/2018/11/13/21/43/instagram-3814047_1280.png" id="commentlike4" onclick="turnred4();size4()" ondblclick="same4()"></div>
+                        </div>
+                    </div>
+                
+                    <div id="main">
+                        <div id="inside">
+                            <img src="https://dp.profilepics.in/profile_pictures/flower/flower_profile_pictures_01.jpg" id="image">
+                            <div class="side">
+                                <span id="name">Someone</span><span class="comment">beautiful</span>
+                                <p class="base">
+                                    3h <span>reply</span>
+                                </p>
+                            </div>
+                            <div class="sideimage"><img src="https://cdn.pixabay.com/photo/2018/11/13/21/43/instagram-3814047_1280.png" id="commentlike5" onclick="turnred5();size5()" ondblclick="same5()"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--here others comment ends-->
+
+                
+                <div id="hasironaudas2"  class="variousemoji" >
+                    <img src="https://miro.medium.com/max/435/0*aMuzw0K4YNuZ6h8S.">
+                    <img src="https://i.insider.com/585847e3ca7f0ccb018b69b3?width=600&format=jpeg&auto=webp">
+                    <img src="https://w7.pngwing.com/pngs/582/603/png-transparent-emoji-smiley-sticker-good-mood-face-smiley-sticker-thumbnail.png">
+                    <img src="https://www.emoji.com/wp-content/uploads/filebase/icons/emoji-icon-glossy-01-07-person-body-folded-hands-(variation-2)-(fitz-1-2)-72dpi-forPersonalUseOnly.png">
+                    <img src="https://www.signwayonline.net/wp-content/uploads/2021/08/thumbs-up-3.jpg">
+                    <img src="https://pbs.twimg.com/profile_images/700118476417949696/z5ziecB2_400x400.png">
+                    <img src="https://i.pinimg.com/originals/8e/b4/de/8eb4dec9aab383784cc1211c8e9161ba.jpg">
+                    <img src="https://1.bp.blogspot.com/-HxiM_Ca4fPU/WFcpCqTHpnI/AAAAAAAATO0/aOCBQTY_rSYEFdCC1bA_clN_ZnIlnooowCLcB/s1600/clapping-hands.png">
+              <!-- <a href="#cool_dude">X</a>-->
+                </div>
+                
+                <br>
+                
+                <div style="display: flex; margin-top: -1.6rem; ">
+                    <img src="https://ecsphilly.org/app/uploads/2017/01/blank-profile-picture-973460_960_720.jpg" 
+                    style="height: 35px; width: 35px; border-radius: 50%;">
+                    <form id="form">
+                    <textarea placeholder="add a comment..." cols="45"></textarea>
+                    <!--
+                    <div class="typetext">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYZ_aStdQPbIkRBoOfMaXCOSLKYF2izYhQ2Q&usqp=CAU" class="camera"> photo/video&nbsp;&nbsp;&nbsp;<br>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjSxwxowdhYZDPb-XxsAbvevsVGai5K16XCw&usqp=CAU" class="emoji"> feeling/activity
+                    </div>
+                    <hr>
+                    --> <img onclick="toggleHead()" id="cool_dude" src="https://pbs.twimg.com/profile_images/700118476417949696/z5ziecB2_400x400.png">
+                   
+                  &nbsp;
+                    <button type="submit">Post</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+      <!--  <p class="numberofthese">45</p> &nbsp;&nbsp;&nbsp;
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3AJsnZq9jp_5FTUj85Wlxxh8NXTQSNIZ7Aw&usqp=CAU">
+        <p class="numberofthese">22</p> &nbsp;&nbsp;&nbsp;
+    --></div>
+</div>
+
+<div class="parent">
+    <div class="profile">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-3djJitD87HAlInUtedfJ0N5dyqxytDgubg&usqp=CAU">
+        <div class="one">
+            <h1>Abishek</h1>
+            <p>post 2d ago</p>
+        </div>
+    </div>
+    <div class="description">Hindus often <b>visit temples to pay obeisance to the Almighty,</b> offer their prayers and seek blessings. The experience of visiting a temple leaves a devotee immensely satisfied, happy and rejuvenated. Devotees of the divine, even travel miles to catch a glimpse of God's idols in ancient temples.</div>
+    <br>
+    <div class="image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ63q9YhJAVt9a0jva_ab5QE8qUJAt-3oIMEQ&usqp=CAU"></div>
+   <!-- <div class="icons">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKnnVNTBrB7KwfJcgs06HWpY_nw-XNdon_2g&usqp=CAU"> 67 &nbsp;&nbsp;&nbsp;
+        <div>
+            <div> <a href="#transition"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd-NgM9ckS4z17fuN-KoRGbGubsUeM6Apueg&usqp=CAU"></a></div>
+            <div  id="transition">
+                <a href="#">X </a>
+                <p><form>
+                    <textarea placeholder="write a comment..." rows="7" cols="43"></textarea>
+                    <hr>
+                    <div class="typetext">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYZ_aStdQPbIkRBoOfMaXCOSLKYF2izYhQ2Q&usqp=CAU" class="camera"> photo/video&nbsp;&nbsp;&nbsp;<br>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjSxwxowdhYZDPb-XxsAbvevsVGai5K16XCw&usqp=CAU" class="emoji"> feeling/activity
+                    </div>
+                    <hr>
+                    <button type="submit">Post</button>
+                </form></p>
+            </div>
+        </div>
+        &nbsp; 45 &nbsp;&nbsp;&nbsp;
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3AJsnZq9jp_5FTUj85Wlxxh8NXTQSNIZ7Aw&usqp=CAU">&nbsp; 22 &nbsp;&nbsp;&nbsp;
+    </div>-->
+    <div class="icons">
+        <img src="https://thumbs.dreamstime.com/b/facebook-like-vector-icon-white-background-128850059.jpg" onclick="display1();display2();display3();" id="likeicon" ondblclick="sameimage();samelikes();samecolor();">
+        <p id="numberoflikes">67 </p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <p class="numberofthese">45</p> &nbsp;&nbsp;&nbsp;
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3AJsnZq9jp_5FTUj85Wlxxh8NXTQSNIZ7Aw&usqp=CAU">
+        <p class="numberofthese">22</p> &nbsp;&nbsp;&nbsp;
+   
+       
+        <div>
+            <div style="margin-left: -9rem;"> <a href="#transition7"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd-NgM9ckS4z17fuN-KoRGbGubsUeM6Apueg&usqp=CAU"></a></div>
+            <div  id="transition7">
+                <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSB4e01eitE1jWGlDDU2BKYgobzcqGaem2PYjFbYS-UsYoy11fv1uq2CEowpiysdtD5T8&usqp=CAU" class="back"></a>
+                <span class="wordcomment">Comments</span>
+                <hr>
+                <!--this is others comment part-->
+                <div id="commentbox">
+                    <div id="main">
+                        <div id="inside">
+                            <img src="https://dp.profilepics.in/profile_pictures/flower/flower_profile_pictures_01.jpg" id="image">
+                            <div class="side">
+                                <span id="name">Someone</span><span class="comment">beautiful</span>
+                                <p class="base">
+                                    3h <span>reply</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="sideimage"><img src="https://cdn.pixabay.com/photo/2018/11/13/21/43/instagram-3814047_1280.png" id="commentlike" onclick="turnred();size()" ondblclick="same()"></div>
+                    </div>
+                
+                    
+                    <div id="main">
+                        <div id="inside">
+                            <img src="https://dp.profilepics.in/profile_pictures/flower/flower_profile_pictures_01.jpg" id="image">
+                            <div class="side">
+                                <span id="name">Someone</span><span class="comment">beautiful</span>
+                                <p class="base">
+                                    3h <span>reply</span>
+                                </p>
+                            </div>
+                            <div class="sideimage"><img src="https://cdn.pixabay.com/photo/2018/11/13/21/43/instagram-3814047_1280.png" id="commentlike2" onclick="turnred2();size2()" ondblclick="same2()"></div>
+                        </div>
+                    </div>
+                
+                    <div id="main">
+                        <div id="inside">
+                            <img src="https://dp.profilepics.in/profile_pictures/flower/flower_profile_pictures_01.jpg" id="image">
+                            <div class="side">
+                                <span id="name">Someone</span><span class="comment">beautiful</span>
+                                <p class="base">
+                                    3h <span>reply</span>
+                                </p>
+                            </div>
+                            <div class="sideimage"><img src="https://cdn.pixabay.com/photo/2018/11/13/21/43/instagram-3814047_1280.png" id="commentlike3" onclick="turnred3();size3()" ondblclick="same3()"></div>
+                        </div>
+                    </div>
+                
+                    <div id="main">
+                        <div id="inside">
+                            <img src="https://dp.profilepics.in/profile_pictures/flower/flower_profile_pictures_01.jpg" id="image">
+                            <div class="side">
+                                <span id="name">Someone</span><span class="comment">beautiful</span>
+                                <p class="base">
+                                    3h <span>reply</span>
+                                </p>
+                            </div>
+                            <div class="sideimage"><img src="https://cdn.pixabay.com/photo/2018/11/13/21/43/instagram-3814047_1280.png" id="commentlike4" onclick="turnred4();size4()" ondblclick="same4()"></div>
+                        </div>
+                    </div>
+                
+                    <div id="main">
+                        <div id="inside">
+                            <img src="https://dp.profilepics.in/profile_pictures/flower/flower_profile_pictures_01.jpg" id="image">
+                            <div class="side">
+                                <span id="name">Someone</span><span class="comment">beautiful</span>
+                                <p class="base">
+                                    3h <span>reply</span>
+                                </p>
+                            </div>
+                            <div class="sideimage"><img src="https://cdn.pixabay.com/photo/2018/11/13/21/43/instagram-3814047_1280.png" id="commentlike5" onclick="turnred5();size5()" ondblclick="same5()"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--here others comment ends-->
+
+                
+                <div id="hasironaudas2"  class="variousemoji" >
+                    <img src="https://miro.medium.com/max/435/0*aMuzw0K4YNuZ6h8S.">
+                    <img src="https://i.insider.com/585847e3ca7f0ccb018b69b3?width=600&format=jpeg&auto=webp">
+                    <img src="https://w7.pngwing.com/pngs/582/603/png-transparent-emoji-smiley-sticker-good-mood-face-smiley-sticker-thumbnail.png">
+                    <img src="https://www.emoji.com/wp-content/uploads/filebase/icons/emoji-icon-glossy-01-07-person-body-folded-hands-(variation-2)-(fitz-1-2)-72dpi-forPersonalUseOnly.png">
+                    <img src="https://www.signwayonline.net/wp-content/uploads/2021/08/thumbs-up-3.jpg">
+                    <img src="https://pbs.twimg.com/profile_images/700118476417949696/z5ziecB2_400x400.png">
+                    <img src="https://i.pinimg.com/originals/8e/b4/de/8eb4dec9aab383784cc1211c8e9161ba.jpg">
+                    <img src="https://1.bp.blogspot.com/-HxiM_Ca4fPU/WFcpCqTHpnI/AAAAAAAATO0/aOCBQTY_rSYEFdCC1bA_clN_ZnIlnooowCLcB/s1600/clapping-hands.png">
+              <!-- <a href="#cool_dude">X</a>-->
+                </div>
+                
+                <br>
+                
+                <div style="display: flex; margin-top: -1.6rem; ">
+                    <img src="https://ecsphilly.org/app/uploads/2017/01/blank-profile-picture-973460_960_720.jpg" 
+                    style="height: 35px; width: 35px; border-radius: 50%;">
+                    <form id="form">
+                    <textarea placeholder="add a comment..." cols="45"></textarea>
+                    <!--
+                    <div class="typetext">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYZ_aStdQPbIkRBoOfMaXCOSLKYF2izYhQ2Q&usqp=CAU" class="camera"> photo/video&nbsp;&nbsp;&nbsp;<br>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjSxwxowdhYZDPb-XxsAbvevsVGai5K16XCw&usqp=CAU" class="emoji"> feeling/activity
+                    </div>
+                    <hr>
+                    --> <img onclick="toggleHead()" id="cool_dude" src="https://pbs.twimg.com/profile_images/700118476417949696/z5ziecB2_400x400.png">
+                   
+                  &nbsp;
+                    <button type="submit">Post</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+      <!--  <p class="numberofthese">45</p> &nbsp;&nbsp;&nbsp;
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3AJsnZq9jp_5FTUj85Wlxxh8NXTQSNIZ7Aw&usqp=CAU">
+        <p class="numberofthese">22</p> &nbsp;&nbsp;&nbsp;
+    --></div>
+</div>
+</div>
+<!--CENTER SECTION END-->
+
+<div id="right_part_advertisement">
+    <div id="advertisement">
+        ADVERTISEMENT
+    </div>
+    <br>
+    <br>
+<img id="shirtt" src="https://5.imimg.com/data5/YJ/BO/MY-10973479/mens-designer-casual-shirt-500x500.jpg"
+ height="80px" width="80px"> <div id="exclusive"> Exclusive new collection<br> Men </div>
+<br>
+<br>
+<br>
+
+
+<img src="https://static.digit.in/product/thumb_171309_product_td_300.jpeg"
+height="80px" width="80px"><div id="apple">Apple iPhone 12 <br>Pro Max </div>
+    </div>
+
+    <div id="right_part">
+    <div id="right_part_contacts">
+        <div id="contact_heading"> Contacts</div>
+<div class="contacts_section">
+<img id="imgg" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/frozen-2-horse-1564419191.jpg?crop=0.420xw:1.00xh;0.306xw,0&resize=768:*"
+height="50px" width="50px"> <div class="Omi">Om Kapoor </div>
+</div> <div id="roundgreen"></div>
+<div class="contacts_section">
+    <img id="imgg" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/frozen-2-horse-1564419191.jpg?crop=0.420xw:1.00xh;0.306xw,0&resize=768:*"
+    height="50px" width="50px"> <div class="Omi">Om Kapoor </div>
+    </div> <div id="roundgreen2"></div>
+   
+    <div class="contacts_section">
+        <img id="imgg" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/frozen-2-horse-1564419191.jpg?crop=0.420xw:1.00xh;0.306xw,0&resize=768:*"
+        height="50px" width="50px"> <div class="Omi">Om Kapoor </div>
+        </div><div id="roundgreen3"></div>
+ <div class="contacts_section">
+            <img id="imgg" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/frozen-2-horse-1564419191.jpg?crop=0.420xw:1.00xh;0.306xw,0&resize=768:*"
+            height="50px" width="50px"> <div class="Omi">Om Kapoor </div>
+  </div><div id="roundgreen4"></div>
+  <div class="contacts_section">
+    <img id="imgg" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/frozen-2-horse-1564419191.jpg?crop=0.420xw:1.00xh;0.306xw,0&resize=768:*"
+    height="50px" width="50px"> <div class="Omi">Om Kapoor </div>
+    </div>  <div id="roundgreen5"></div>
+    <div class="contacts_section">
+        <img id="imgg" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/frozen-2-horse-1564419191.jpg?crop=0.420xw:1.00xh;0.306xw,0&resize=768:*"
+        height="50px" width="50px"> <div class="Omi">Om Kapoor </div>
+        </div><div id="roundgreen6"></div>
+        <div class="contacts_section">
+            <img id="imgg" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/frozen-2-horse-1564419191.jpg?crop=0.420xw:1.00xh;0.306xw,0&resize=768:*"
+            height="50px" width="50px"> <div class="Omi">Om Kapoor </div>
+            </div> <div id="roundgreen7"></div>
+            <div class="contacts_section">
+                <img id="imgg" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/frozen-2-horse-1564419191.jpg?crop=0.420xw:1.00xh;0.306xw,0&resize=768:*"
+                height="50px" width="50px"> <div class="Omi">Om Kapoor </div>
+                </div> <div id="roundgreen8"></div>
+                <div class="contacts_section">
+                    <img id="imgg" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/frozen-2-horse-1564419191.jpg?crop=0.420xw:1.00xh;0.306xw,0&resize=768:*"
+                    height="50px" width="50px"> <div class="Omi">Om Kapoor </div>
+                    </div><div id="roundgreen9"></div>
+                     <div class="contacts_section">
+                        <img id="imgg" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/frozen-2-horse-1564419191.jpg?crop=0.420xw:1.00xh;0.306xw,0&resize=768:*"
+                        height="50px" width="50px"> <div class="Omi">Om Kapoor </div>
+                        </div><div id="roundgreen10"></div>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+       </body>
+
+<script src="myscript.js"></script>
+</html>
